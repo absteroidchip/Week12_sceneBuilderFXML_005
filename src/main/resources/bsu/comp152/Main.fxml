@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bsu.comp152.Controller">
+   <children>
+      <BorderPane prefHeight="400.0" prefWidth="600.0">
+         <bottom>
+            <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="329.0" prefWidth="597.0" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="70.0" minHeight="10.0" prefHeight="70.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="70.0" minHeight="10.0" prefHeight="70.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="70.0" minHeight="10.0" prefHeight="70.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="70.0" minHeight="10.0" prefHeight="70.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <BorderPane.margin>
+                  <Insets left="25.0" right="25.0" />
+               </BorderPane.margin>
+               <children>
+                  <Button mnemonicParsing="false" onAction="#numberClicked" prefHeight="50.0" prefWidth="50.0" text="7" GridPane.halignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font></Button>
+                  <Button mnemonicParsing="false" onAction="#numberClicked" prefHeight="50.0" prefWidth="50.0" text="8" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font></Button>
+                  <Button mnemonicParsing="false" onAction="#numberClicked" prefHeight="50.0" prefWidth="50.0" text="9" GridPane.columnIndex="2" GridPane.halignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font></Button>
+                  <Button mnemonicParsing="false" onAction="#clearClicked" prefHeight="42.0" prefWidth="70.0" text="CLEAR" GridPane.columnIndex="3" GridPane.halignment="CENTER">
+                     <font>
+                        <Font size="16.0" />
+                     </font></Button>
+                  <Button mnemonicParsing="false" onAction="#numberClicked" prefHeight="50.0" prefWidth="50.0" text="4" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="24.0" />
+                     </font></Button>
+                  <Button mnemonicParsing="false" onAction="#numberClicked" prefHeight="50.0" prefWidth="50.0" text="1" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="24.0" />
+                     </font></Button>
+                  <Button mnemonicParsing="false" onAction="#numberClicked" prefHeight="50.0" prefWidth="50.0" text="2" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="24.0" />
+                     </font></Button>
+                  <Button mnemonicParsing="false" onAction="#numberClicked" prefHeight="50.0" prefWidth="50.0" text="5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="24.0" />
+                     </font></Button>
+                  <Button mnemonicParsing="false" onAction="#numberClicked" prefHeight="50.0" prefWidth="50.0" text="6" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="24.0" />
+                     </font></Button>
+                  <Button mnemonicParsing="false" onAction="#equalsClicked" prefHeight="50.0" prefWidth="50.0" text="=" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="24.0" />
+                     </font></Button>
+                  <Button mnemonicParsing="false" onAction="#numberClicked" prefHeight="50.0" prefWidth="50.0" text="3" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="24.0" />
+                     </font></Button>
+                  <Button mnemonicParsing="false" onAction="#plusClicked" prefHeight="50.0" prefWidth="50.0" text="+" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="24.0" />
+                     </font></Button>
+                  <Button mnemonicParsing="false" onAction="#numberClicked" prefHeight="50.0" prefWidth="50.0" text="0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="24.0" />
+                     </font></Button>
+                  <ImageView fitHeight="109.0" fitWidth="112.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+                     <image>
+                        <Image url="@crazyBro.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets top="50.0" />
+                     </GridPane.margin>
+                  </ImageView>
+               </children>
+            </GridPane>
+         </bottom>
+         <top>
+            <TextField fx:id="display" alignment="CENTER_RIGHT" prefHeight="78.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="15.0" left="50.0" right="50.0" top="25.0" />
+               </BorderPane.margin>
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </TextField>
+         </top></BorderPane>
+   </children>
+</AnchorPane>
